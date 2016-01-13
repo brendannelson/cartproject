@@ -20,8 +20,7 @@ html {
     background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, black, white); /* Standard syntax */
-    /*background-repeat:no-repeat;*/
+    background: linear-gradient(to right, black, #D9D9D9); /* Standard syntax */
 }
 
 html, body {
@@ -53,14 +52,12 @@ h2 {
 
 h1 {
   font-size: 72px;
-  background: -webkit-linear-gradient(#33CC33, #33CCFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding 0px 0px 10px 0px;
+  color:#13B9A9;
+  padding: 0px 0px 10px 0px;
   text-align:center;
   margin-top:100px;
-  border-top:1.5px solid #33CC33;
-  border-bottom:1.5px solid #33CC33;
+  border-top:1.5px solid #3EC0DA;
+  border-bottom:1.5px solid #3EC0DA;
 }
 
 
@@ -68,7 +65,7 @@ h1 {
 p {
     margin:15px 0px;
     line-height:20px;
-    color:#284357;
+    color:#87D0DE;
 }
 
 b, strong {
@@ -76,12 +73,12 @@ b, strong {
 }
 
 a {
-    color:#33CC33;
+    color:#99EEFF;
     text-decoration:none;
 }
 
 a:hover {
-    color:#CC0000;
+    color:#3973AC;
     text-decoration:underline;
 }
 
@@ -89,11 +86,6 @@ figure {
     margin:0px;
     padding:0px;
 }
-
-/*hr {*/
-/*    padding:25px 0px;*/ /*-- COMMENTED OUT IN HTML TAMBIEN --*/
-/*    clear:both;*/
-/*}*/
 
 footer {
     clear:both;
@@ -103,7 +95,6 @@ footer {
 footer p {
     text-align:center;
     font-size:17px;
-    
 }
 
 footer p a {
@@ -122,8 +113,13 @@ footer p a:hover {
     display:block;
 }
 
-.social {
-    text-align:center;
+.copyright a {
+    color: #ffff80;
+}
+
+.copyright a:hover {
+    color: #ffac33;
+    text-decoration:underline;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------- END OF GLOBAL STYLES -------------*/
@@ -151,7 +147,7 @@ header {
     position:absolute;
     top:30px;
     right:5%;
-    /*text-decoration:none;*/
+    text-decoration:none;
 }  
 
 #menu li {
@@ -165,11 +161,11 @@ header {
 #menu li:after {
     content:"|";
     padding:16px 20px;
-    color:rgb(51, 204, 51);
+    color:#3EC0DA;
 }
 
 .currentPage a {
-    color:#33CCFF;
+    color:#00A9CC;
     text-decoration:none;
 }
 
@@ -227,6 +223,10 @@ header {
     overflow:hidden;
 }
 
+.mainWidth {
+    margin-top:15px;
+}
+
 #main {
     margin-bottom:25px;
     margin-top:50px;
@@ -265,15 +265,9 @@ header {
     padding:0px;
 }
 
-/*.likeImage {*/
-/*    width:384px;*/
-/*    height:225px;*/
-/*    background-color:#FF0066;*/
-/*}*/
-
 .likeImage span {
     color:#FFFFFF;
-    background-color:#33CCFF;
+    background-color:#3EC0DA;
     display:block;
     font-size:2em;
     text-decoration:none;
@@ -284,6 +278,9 @@ header {
     
 }
 
+#indexUno {
+    font-size:2em;
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------- END OF COLUMN STYLES -------------*/
 
@@ -293,7 +290,7 @@ header {
 a.button, button {
     color:#FFFFFF;
     padding:2px 18px;
-    background-color:#FF0000;
+    background-color:#3EC0DA;
     text-transform:uppercase;
     font-weight:700;
     margin:0px auto;
@@ -302,7 +299,8 @@ a.button, button {
 a.button:hover, button:hover {
     color:#000000;
     text-decoration:none;
-    background-color: #ff1a1a;
+    background-color: #a9e3ef
+    ;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------- END OF BUTTON STYLES -------------*/
@@ -310,17 +308,10 @@ a.button:hover, button:hover {
 
 /*------------------------------------------------------------------------------------------------------------------------------------------- ABOUT ME STYLES --------------*/
 
-/*.alignLeft {*/
-/*    float:left;*/
-/*    width:384px;*/
-/*    margin-right:24px;*/
-/*    display:block;*/
-/*}*/
-
 .alignRight {
-    width:792px;
     text-align:center;
     margin:0px auto;
+    
 }
 
 .alignRight h2 {
@@ -391,10 +382,11 @@ textarea {
 #wufoo-z1oxgmwf14sdt58 {
     width:90%;
     border-radius:6px;
-    background: -webkit-linear-gradient(#cccccc, #666666); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#cccccc, #666666); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#cccccc, #666666); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#cccccc, #666666); /* Standard syntax */;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, black, #D9D9D9); /* Standard syntax */
     background-repeat:no-repeat;
     margin:15px 10px auto;
     border:4px solid #85E085;
@@ -403,6 +395,7 @@ textarea {
 
 .mobileContact h2 {
     margin-top:20px;
+    margin-left:135px;
 }
 
 .mobileContact p {
@@ -410,7 +403,7 @@ textarea {
 }
 
 .galleryImages {
-    background-color:#e0f7e0;
+    background-color: #ccffff;
     padding:10px;
     width:275px;
     float:left;
@@ -435,27 +428,21 @@ textarea {
 }
 
 .colorChange {
-    background: -webkit-linear-gradient(#33CCFF, #33CC33);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#87D0DE;
 }
 
 #myVideos {
     position:relative;
-    padding-bottom:50%;
-    padding-top:30px;
-    height:0px;
     overflow:hidden;
-    margin: 0px auto;
+    margin:0px auto;
     width:1100px;
+    height:500px;
 }
 
 #myVideos iframe, #myVideos embed {
     position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:50%;
+    /*width:100%;*/
+    /*height:50%;*/
 }
 
 /*===================== QUERY - 1024px =======================================*/
@@ -497,6 +484,7 @@ textarea {
         width:90%;
         margin:1% auto;
     }
+    
     
 }
 
